@@ -1,0 +1,17 @@
+message test {
+	int a;
+	string b;
+	int c;
+}
+
+message test2 {
+	int a;
+	string b;
+	int c;
+}
+
+message test3 {
+	int a;
+	string b;
+	int c;
+}
