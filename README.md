@@ -1,3 +1,3 @@
 # XSE-PROJECT
-# create by solyess
-# this project
+The project is in order to quickly build your own business project,Use the GPL
+
