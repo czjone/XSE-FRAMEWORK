@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E9938223-106D-4D0E-83A3-906BC778AE07</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XSE-PROJECT</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14EA54932584158A3C4ECB637A87AE3551757FCC</key>
+		<string>https://github.com/czjone/XSE-PROJECT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Dev-Proj/Mac/XSE-PROJECT.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14EA54932584158A3C4ECB637A87AE3551757FCC</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/czjone/XSE-PROJECT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>14EA54932584158A3C4ECB637A87AE3551757FCC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14EA54932584158A3C4ECB637A87AE3551757FCC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XSE-PROJECT</string>
+		</dict>
+	</array>
+</dict>
+</plist>

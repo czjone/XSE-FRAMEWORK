@@ -1,41 +1,97 @@
-#ifndef _MD5_H
-#define _MD5_H 1
+#   include <XSE/Core/File.h>
+#   include <XSE/Core/StdFileStream.h>
 
-//#pragma warning(disable:4786)
+#   include <sys/stat.h>
+#   include <unistd.h>
+#   include <stdio.h>
+#   include <stdlib.h>
 
-#include <string>
+XSE_NS_EXT_USING(CORE_NS_NAME);
 
-using namespace std;
-
-/*!
- * Manage MD5.
- */
-class MD5
-{
-private:
-#define uint8  unsigned char
-#define uint32 unsigned long int
+IO::File::File(STRING path):m_path(path){
     
-    struct md5_context
-    {
-        uint32 total[2];
-        uint32 state[4];
-        uint8 buffer[64];
-    };
+}
+IO::File::~File(void){
+    if(!m_stream->Eof()){
+        this->flush();
+    }
+    DELETE(m_stream);
+}
+
+Stream& IO::File::getStream(){
+    XSE_ASSERT(m_model == Model::FILE,"Folder can't read with stream");
+    if(!m_stream){
+//        m_stream =  new StdFileStream(m_path);
+    }
+    return *m_stream;
+}
+void IO::File::flush(){
     
-    void md5_starts( struct md5_context *ctx );
-    void md5_process( struct md5_context *ctx, uint8 data[64] );
-    void md5_update( struct md5_context *ctx, uint8 *input, uint32 length );
-    void md5_finish( struct md5_context *ctx, uint8 digest[16] );
+}
+void IO::File::close(){
     
-public:
-    void GenerateMD5(unsigned char* buffer,int bufferlen);
-    MD5();
-    MD5(const char * md5src);
-    MD5(unsigned long* md5src);
-    MD5 operator +(MD5 adder);
-    bool operator ==(MD5 cmper);
-    string ToString();
-    unsigned long m_data[4];
-};
-#endif /* md5.h */
+}
+
+IO::File::Model IO::File::getModel(){
+    return IO::File::getFileModel(m_path);
+}
+
+//static
+IO::File& IO::File::OpenFile(STRING path){
+    File * file = new File(path);
+    return *file;
+}
+
+void IO::File::Close(File*file){
+    if(file) file->flush();
+    DELETE(file);
+}
+
+Bool IO::File::exist(STRING path){
+    //TOODO:: add Other platform support.
+#if(XSE_PLATFORM_TAG == XSE_PLATFORM_TAG_MAC)
+    return access((const char *)path, F_OK);
+#endif
+    return STATUS_UNKNOW_ERROR;
+}
+
+IO::File::Model IO::File::getFileModel(STRING path){
+    if (!File::exist(path)) return Model::NOT_FOUND;
+    //TOODO:: add Other platform support.
+#if(XSE_PLATFORM_TAG == XSE_PLATFORM_TAG_MAC)
+    struct stat st;
+    printf("%s",argv[1]);
+    stat(path,&st);
+    if (S_ISDIR(st.st_mode)) return Model::DIR;
+    else return Model::File;
+    return Model::UNKNOW;
+#else
+    return Model::UNKNOW_PLATFORM;
+#endif
+    
+}
+
+//Array<File*> IO::File::getFiles(STRING dir)
+//{
+//    Array<File*> files;
+//    return files;
+//}
+
+status IO::File::createFile(STRING path){
+    //    ::File * file = fopen((<#const char *#>)STRING, "wb+");
+    return STATUS_UNKNOW_ERROR;
+}
+
+status IO::File::createFile(STRING path,Stream&){
+    
+    return STATUS_UNKNOW_ERROR;
+}
+status IO::File::createDir(STRING path){
+    //TODO::add Other platform support.
+    return STATUS_UNKNOW_ERROR;
+}
+
+const STRING IO::File::getDomainsDir(){
+    //TODO::add Other platform support.
+    return ( unsigned char*)"";
+}

@@ -30,7 +30,7 @@ Main features
 Build Requirements
 ------------------
 
-* Mac OS X 10.7+, Xcode 4.6+
+* Mac OS X 10.10.3+, Xcode 6.3.1+
 
 
 Runtime Requirements
