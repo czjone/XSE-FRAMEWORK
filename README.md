@@ -41,4 +41,11 @@ Runtime Requirements
 Contact us
 ----------
 
-* Forum: [http://www.baidu.com.org][9]
+<!--* Forum: [http://www.baidu.com.org][9]-->
+# Contains US
+
+* qq: 3717414579 email:czjone@126.com ,371741579@qq.com
+
+# Project QQ Group
+
+* qq gourp:91593285 XSE-FRAMEWORK
