@@ -47,4 +47,8 @@ Contact us
 
 # Project QQ Group
 
-* qq gourp:91593285 XSE-FRAMEWORK
+* qq group:91593285 XSE-FRAMEWORK
+
+# author Home Page
+
+*http://www.cnblogs.com/czjone/
