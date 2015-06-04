@@ -1,5 +1,5 @@
 # XSE-framework
-#<img src="http://...." width=200>
+<!--#<img src="http://...." width=200>-->
 
 
 <!--#[![Build Status](http://)](https://travis-ci.org/cocos2d/cocos2d-x)-->
