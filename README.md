@@ -2,14 +2,14 @@
 #<img src="http://...." width=200>
 
 
-#[![Build Status](http://)](https://travis-ci.org/cocos2d/cocos2d-x)
-#[![Build Status](https://)](https://travis-ci.org/cocos-travis-mac/cocos2d-x)
+<!--#[![Build Status](http://)](https://travis-ci.org/cocos2d/cocos2d-x)-->
+<!--#[![Build Status](https://)](https://travis-ci.org/cocos-travis-mac/cocos2d-x)-->
 
 [XSE-framework][1] is a multi-platform framework for building 2d games, interactive books, demos and other graphical applications.
 It is based on [XSE-framework][2], but instead of using Objective-C, it uses C++.
 It works on iOS, Android, Windows Phone, OS X, Windows and Linux.
 
-cocos2d-x is:
+XSE-FRAMEWORK is:
 
 * Fast
 * Free
@@ -42,7 +42,6 @@ Contact us
 ----------
 
 <!--* Forum: [http://www.baidu.com.org][9]-->
-# Contains US
 
 * qq: 3717414579 email:czjone@126.com ,371741579@qq.com
 
