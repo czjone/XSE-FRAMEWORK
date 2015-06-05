@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>TESTER(MAC).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>XSE-EDITOR(MAC).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>0201F8BF1B1D50F300848158</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02B3769D1B214815000CBEBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
