@@ -9,6 +9,8 @@
 #ifndef XSE_PROJECT_widgets_h
 #define XSE_PROJECT_widgets_h
 
+#include <XSE/config.h>
+
 class widgetsSkin{
     PROPERTY_DEF(WindowBackGround,  ColorRGBA);
     PROPERTY_DEF(MenuBackground,    ColorRGBA);
@@ -49,6 +51,7 @@ class widgetsGroup:public widgets{
 };
 
 class GLWindow:public widgetsGroup{
+    
     
 };
 

@@ -15,12 +15,13 @@ public:
     virtual Bool Eof() = 0;
     virtual Bool Valid() = 0;
     virtual void Close() = 0;
-        virtual void Write(const BYTES bytes,UINT len) = 0;
+    virtual void Write(const BYTES bytes,UINT len) = 0;
 };
 
 class StreamBuf:public Stream{
 public:
     virtual ULONG GetLength() = 0;
+    virtual BYTES getBytes() = 0;
 };
 
 XSE_NS_EXT_END

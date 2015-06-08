@@ -90,9 +90,10 @@ typedef INT  status;
 
 //#define XSE_LOG(msg,...) print(msg,__VA_ARGS__) //c99
 #include <stdio.h>
-#define XSE_LOG(msg,args...) fprintf(stderr,msg,##args) //GCC
+#define XSE_PRINTF(TYPE_MSG,msg,args...)printf(TYPE_MSG); printf(":");fprintf(stderr,msg,##args);printf("\n") //GCC
+#define XSE_LOG(MSG,args...) XSE_PRINTF("XSE LOG","%s",MSG) //GCC
 #define XSE_ASSERT(EXP,MSG) \
-    if(!(EXP)) XSE_LOG("ASSERT FAIL: %s",MSG)
+    if(!(EXP)) XSE_PRINTF("XSE ASSERT","%s",MSG)
 
 //other
 #define CORE_NS_NAME Core
@@ -101,8 +102,10 @@ typedef INT  status;
 // status
 #define STATUS_OK 0
 #define STATUS_UNKNOW_ERROR -1
+#define VALUE_BOOL_FALSE 0
+#define VALUE_BOOL_TRUE 1
 
-#define  DELETE(p) if((p)) {delete (p);(p)=nullptr;}
-#define  DELETE_ARRAY(p) if((p)) {delete[] (p);(p)=nullptr;}
+#define  DELETE(p) {if((p)) {delete (p);(p)=nullptr;}}
+#define  DELETE_ARRAY(p) {if((p)) {delete[] (p);(p)=nullptr;}}
 
 #endif//(end XSE_PROTOBUF_CONFIG_H)

@@ -3560,7 +3560,7 @@ int Fl_X::set_cursor(const Fl_RGB_Image *image, int hotx, int hoty) {
     NSDictionary *options;
     options = [NSDictionary dictionaryWithObjectsAndKeys:
 	       [[[NSAttributedString alloc] 
-		initWithString:[NSString stringWithFormat:@" GUI with FLTK %d.%d", 
+		initWithString:[NSString stringWithFormat:@" Author: solyess Email: czjone@126.com", 
 		FL_MAJOR_VERSION, FL_MINOR_VERSION ]] autorelease], @"Credits",
                 	     nil];
     [NSApp orderFrontStandardAboutPanelWithOptions:options];

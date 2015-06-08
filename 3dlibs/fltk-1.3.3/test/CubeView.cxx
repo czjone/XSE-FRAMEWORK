@@ -32,7 +32,7 @@ CubeView::CubeView(int x,int y,int w,int h,const char *l)
     hAng=0.0;
     size=10.0;
     xshift=0.0;
-    yshift=0.0;w
+    yshift=0.0;
     
     /* The cube definition. These are the vertices of a unit cube
      * centered on the origin.*/

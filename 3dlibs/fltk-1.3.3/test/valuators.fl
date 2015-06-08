@@ -12,8 +12,8 @@ Function {} {open
 } {
   Fl_Window {} {
     label {Valuator classes, showing values for type()} open
-    xywh {400 199 580 510} type Double color 43 selection_color 43 hide
-    code0 {\#include <stdio.h>}
+    xywh {400 199 580 510} type Double color 43 selection_color 43
+    code0 {\#include <stdio.h>} visible
   } {
     Fl_Box {} {
       label Fl_Slider
@@ -22,7 +22,7 @@ Function {} {open
     Fl_Slider {} {
       label 0
       callback callback
-      tooltip {Vertical Slider} xywh {30 145 20 45} selection_color 1 labelsize 8 align 1
+      tooltip {Vertical Slider} xywh {30 45 20 145} selection_color 1 labelsize 8 align 1
     }
     Fl_Slider {} {
       label FL_VERT_FILL_SLIDER
@@ -89,7 +89,7 @@ Function {} {open
     }
     Fl_Value_Input {} {
       label 0
-      callback callback selected
+      callback callback
       tooltip {Value Input} xywh {30 470 105 25} labelsize 8 maximum 100 step 0.1
     }
     Fl_Box {} {
@@ -153,7 +153,7 @@ Function {} {open
     }
     Fl_Spinner {} {
       label FL_FLOAT_INPUT
-      xywh {450 211 80 24} type Float labelsize 8 align 2 minimum 0 maximum 1 step 0.01 value 0.05
+      xywh {465 216 80 24} type Float labelsize 8 align 2 minimum 0 maximum 1 step 0.01 value 0.05
     }
     Fl_Box {} {
       label Fl_Dial
@@ -191,7 +191,7 @@ Function {} {open
       tooltip {Horizontal Roller} xywh {345 430 90 20} type Horizontal labelsize 8
     }
     Fl_Box {} {
-      label {Some widgets have color(FL_GREEN) and color2(FL_RED) to show the areas these effect.}
+      label {Some widgets have color(FL_GREEN) and color2(FL_RED) to show the areas these effect.} selected
       xywh {460 385 110 115} box BORDER_FRAME color 0 selection_color 0 labelsize 11 align 128
     }
   }

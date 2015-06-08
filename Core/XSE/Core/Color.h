@@ -1,10 +1,3 @@
-//
-//  Color.h
-//  XSE-PROJECT
-//
-//  Created by chenzejun on 6/3/15.
-//
-//
 
 #ifndef XSE_PROJECT_Color_h
 #define XSE_PROJECT_Color_h
